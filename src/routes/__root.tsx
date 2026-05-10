@@ -11,6 +11,7 @@ import appCss from "../styles.css?url";
 import { Toaster } from "#/components/ui/sonner.tsx";
 import { ThemeProvider } from "@/components/theme-provider";
 import { ModeToggle } from "#/components/mode-toggle.tsx";
+import NavBar from "#/components/nav-bar.tsx";
 
 interface MyRouterContext {
 	queryClient: QueryClient;
@@ -82,7 +83,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
 			</head>
 			<body className="font-sans antialiased wrap-anywhere selection:bg-[rgba(79,184,178,0.24)]">
 				<ThemeProvider defaultTheme="system" storageKey="theme">
-					<ModeToggle />
+					<NavBar />
 					{children}
 				</ThemeProvider>
 				<Toaster richColors />
