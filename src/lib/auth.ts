@@ -9,11 +9,11 @@ export const auth = betterAuth({
 		provider: "postgresql",
 	}),
 	socialProviders: {
-		//TODO : Add Goggle 
+		//TODO : Add Goggle
 		github: {
 			clientId: process.env.GITHUB_CLIENT_ID as string,
 			clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
 		},
 	},
-	plugins: [tanstackStartCookies()] // make sure this is the last plugin in the array
+	plugins: [tanstackStartCookies()], // make sure this is the last plugin in the array
 });
