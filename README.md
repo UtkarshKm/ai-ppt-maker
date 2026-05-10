@@ -1,4 +1,4 @@
-# AI PPT Maker
+# PPTMage
 
 Project status README for what is completed so far.
 
